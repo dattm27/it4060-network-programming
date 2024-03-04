@@ -5,6 +5,7 @@
 #include<netdb.h>
 #include<string.h>
 #include<unistd.h>
+#include<arpa/inet.h>
 
 int main () {
 
@@ -34,7 +35,7 @@ int main () {
         exit (1);
     }
 
-    printf("Waiting for a new client...");
+    printf("Waiting for a new client...\n");
     
     //chap nhan ket noi
     int client = accept(listener, NULL, NULL);
@@ -43,23 +44,25 @@ int main () {
         exit(1);
     }
     printf("New client conected: %d\n", client);
+    while(1){
+        // nhan du lieu tu client
+        char buf[256];
+        int ret = recv(client, buf, sizeof(buf), 0);
+        if (ret <= 0){
+            printf("recv() failed.\n");
+            exit(1);
+        }
 
-    // nhan du lieu tu client
-    char buf[256];
-    int ret = recv(client, buf, sizeof(buf), 0);
-    if (ret <= 0){
-        printf("recv() failed.\n");
-        exit(1);
+        //them ky tu ket thuc xau va in ra man hinh
+        if (ret < sizeof(buf)) 
+            buf[ret] = 0;
+        puts(buf);
+
+        //gui du lieu sang client
+        send(client, buf, strlen(buf), 0);
+
     }
-
-    //them ky tu ket thuc xau va in ra man hinh
-    if (ret < sizeof(buf)) 
-        buf[ret] = 0;
-    puts(buf);
-
-    //gui du lieu sang client
-    send(client, buf, strlen(buf), 0);
-
+    
     //dong ket noi
     close(client);
     close(listener);
