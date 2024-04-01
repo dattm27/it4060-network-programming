@@ -1,0 +1,14 @@
+2024-04-01 09:30:53 info: Congratulations, your extension "Embold" is now active!
+2024-04-01 09:30:53 info: tempDirectory : /Users/dattran/.vscode/extensions/embold-vscode.embold-0.1.8/temp
+2024-04-01 09:30:55 info: Extraction complete for source: /Users/dattran/.vscode/extensions/embold-vscode.embold-0.1.8/resources/embold-scanner-archive.zip, destination: /Users/dattran/.vscode/extensions/embold-vscode.embold-0.1.8/temp
+2024-04-01 09:30:55 info: Extension installed on machine OS : darwin
+2024-04-01 09:30:55 info: Fetched the issues from DB
+2024-04-01 09:30:56 error: request to https://v1.embold.io/api/plugins failed, reason: getaddrinfo ENOTFOUND v1.embold.io
+2024-04-01 09:30:56 info: Current installed embold extension version : 0.1.8
+2024-04-01 09:30:56 info: Latest embold extension version on marketplace : 0.1.6
+2024-04-01 09:30:56 info: Java version installed on machine : 
+java version "18" 2022-03-22
+Java(TM) SE Runtime Environment (build 18+36-2087)
+Java HotSpot(TM) 64-Bit Server VM (build 18+36-2087, mixed mode, sharing)
+
+2024-04-01 09:30:56 info: Java installed on machine.

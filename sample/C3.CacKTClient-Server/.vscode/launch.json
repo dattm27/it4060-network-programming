@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/dattran/OneDrive - Hanoi University of Science and Technology/Documents/IT4060 Lập trình mạng/it4060-network-programming/sample/C3.CacKTClient-Server",
+      "program": "/Users/dattran/OneDrive - Hanoi University of Science and Technology/Documents/IT4060 Lập trình mạng/it4060-network-programming/sample/C3.CacKTClient-Server/build/Debug/outDebug"
+    }
+  ]
+}
