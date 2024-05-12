@@ -1,4 +1,4 @@
-
+/*Bài chữa telnet server sử dụnu select*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
