@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Simple Calculator</h2>
+    <form action="calculator.php" method="post">
+        <label for="a">Operand a:</label>
+        <input type="text" id="a" name="a"><br><br>
+        
+        <label for="b">Operand b:</label>
+        <input type="text" id="b" name="b"><br><br>
+        
+        <label for="cmd">Operation:</label>
+        <select name="cmd" id="cmd">
+            <option value="add">Addition (+)</option>
+            <option value="sub">Subtraction (-)</option>
+            <option value="mul">Multiplication (*)</option>
+            <option value="div">Division (/)</option>
+        </select><br><br>
+        
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
